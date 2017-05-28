@@ -1,0 +1,31 @@
+<ion-view title="Update Profile" hide-nav-bar="true" cache-view="false" nav-transition="none" id="page14" style="background-color:#00ACCF;">
+  <ion-content padding="true" style="background: url(img/ymNZknmeSWG9iI73eB97_image002.png) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+    <form id="updateProfile-form6" class="list center-form">
+      <ion-list id="updateProfile-list5">
+        <label class="item item-input" id="updateProfile-input12">
+          <span class="input-label">Phone</span>
+          <input type="tel" placeholder="{{customdata.phone}}" ng-model="data.phone">
+        </label>
+        <label class="item item-input" id="updateProfile-input11">
+          <span class="input-label">Street Address</span>
+          <input type="text" placeholder="{{customdata.streetaddress}}" ng-model="data.streetaddress">
+        </label>
+        <label class="item item-input" id="updateProfile-input16">
+          <span class="input-label">Suburb</span>
+          <input type="text" placeholder="{{customdata.suburb}}" ng-model="data.suburb">
+        </label>
+        <label class="item item-input" id="updateProfile-input10">
+          <span class="input-label">State</span>
+          <input type="text" placeholder="{{customdata.state}}" ng-model="data.state">
+        </label>
+        <label class="item item-input" id="updateProfile-input17">
+          <span class="input-label">Postcode</span>
+          <input type="text" placeholder="{{customdata.postcode}}" ng-model="data.postcode">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="updateProfile-button9" ng-click="update()" style="border-radius:50px 50px 50px 50px;" class="button button-calm button-block">Save</button>
+      <a ui-sref="tabsController.userHome()" id="updateProfile-button10" class="button button-light button-block button-clear">Cancel</a>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,41 @@
+<ion-view title="Message Us" id="page16">
+  <ion-content padding="true" style="background: url(img/CT500lpvRpW1Ttn6LINk_image002.png) no-repeat center;background-size:cover;" class="has-header">
+    <form id="messageUs-form7" class="list">
+      <ion-item class="item-divider" id="messageUs-list-item-divider7"> What is your message about?</ion-item>
+      <label class="item item-select" id="messageUs-select4">
+        <span class="input-label"></span>
+        <select ng-model="data.enquiry">
+          <option>I am looking for work</option>
+          <option>I am looking for staff</option>
+          <option>I am interested in training or courses</option>
+          <option>NDIS - Choice and Control</option>
+          <option>Aboriginal Employment Pathways Program</option>
+          <option>Golden Opportunities</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <ion-item class="item-divider" id="messageUs-list-item-divider8"> Preferred method of contact:</ion-item>
+      <ion-radio id="messageUs-radio8" ng-model="data.preferred_contact" ng-value="'Phone'">Phone</ion-radio>
+      <ion-radio id="messageUs-radio9" ng-model="data.preferred_contact" ng-value="'Email'">Email</ion-radio>
+      <label class="item item-input" id="messageUs-textarea2">
+        <span class="input-label">Your Message</span><textarea placeholder="" ng-model="data.message"></textarea></label>
+    </form>
+    <div id="messageUs-markdown8" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Name: {{userData.name}}</p>
+
+      <p style="color:#000000;">Email: {{userData.email}}</p>
+
+      <p style="color:#000000;">Phone: {{customdata.phone}}</p>
+
+      <p style="color:#000000;">Street Address: {{customdata.streetaddress}}</p>
+
+      <p style="color:#000000;">Suburb: {{customdata.suburb}}</p>
+
+      <p style="color:#000000;">State: {{customdata.state}}</p>
+
+      <p style="color:#000000;">Postcode: {{customdata.postcode}}</p>
+    </div>
+    <button id="messageUs-button15" ng-click="submit()" ng-disabled="submitting" style="border-radius:50px 50px 50px 50px;" class="button button-calm button-block oswald">Submit</button>
+    <a ui-sref="tabsController.userHome()" id="messageUs-button20" style="border-radius:50px 50px 50px 50px;" class="button button-calm button-block">Cancel</a>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view title="Login" cache-view="false" nav-transition="none" id="page10" style="background-color:#00ACCF;">
+  <ion-content padding="true" style="background: url(img/hJf4vkFYTuGkf5V2XzTQ_image001.png) no-repeat center;background-size:cover;" scroll="false" class="has-header">
+    <form id="login-form3" class="list center-form">
+      <a ui-sref="tabsController.jobCentreAustralia2()" id="login-button11" class="button button-calm button-small icon ion-ios-home"></a>
+      <div class="spacer" style="width: 290px; height: 21px;"></div>
+      <ion-list id="login-list1">
+        <label class="item item-input top-input" id="login-input8">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="" ng-model="data.email">
+        </label>
+        <label class="item item-input bottom-input" id="login-input9">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="data.password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="width: 290px; height: 18px;"></div>
+      <button id="login-button2" ng-click="login()" style="border-radius:50px 50px 50px 50px;" class="button button-calm button-block">Log in</button>
+      <a ui-sref="tabsController.signup()" id="login-button3" class="button button-light button-block button-clear">Or create an account</a>
+      <button id="login-button16" ng-click="openurl(&quot;https://web.ionic.io/password/reset/0ec3f4a3&quot;)" style="font-weight:lighter;color:#FFFFFF;" class="button button-calm button-small button-block button-clear">Forgot Password?</button>
+    </form>
+    <div id="login-markdown5" ng-if="error" style="text-align:center;" class="show-list-numbers-and-dots error-box">
+      <p style="color:#000000;">{{error}}</p>
+    </div>
+  </ion-content>
+</ion-view>
